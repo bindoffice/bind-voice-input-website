@@ -26,7 +26,7 @@ Bind Voice Input is a macOS-native, fully offline voice input tool. Press a glob
 
 ### Fully Offline, Local ASR
 
-Powered by the built-in [Qwen3-ASR](https://github.com/bindoffice/bind-voice-input/tree/main/qwen-asr) model, speech recognition runs entirely on your Mac. No API calls, no usage-based fees — works even when you're offline.
+Powered by the built-in Qwen3-ASR model, speech recognition runs entirely on your Mac. No API calls, no usage-based fees — works even when you're offline.
 
 - Run locally forever after the initial model download
 - Low latency — text appears as soon as you finish speaking
