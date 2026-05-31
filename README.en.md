@@ -90,19 +90,7 @@ Free to download, runs locally. First launch walks you through permissions (micr
 | Product landing page | `index.html` in this directory (static site) |
 | BindOffice | [bindoffice.com](https://bindoffice.com) |
 | Website repo | [bindoffice/bind-voice-input-website](https://github.com/bindoffice/bind-voice-input-website) |
-| Support | [support@bindoffice.com](mailto:support@bindoffice.com) |
 
 ---
 
-## Preview the Landing Page Locally
-
-```bash
-cd website
-python3 -m http.server 9876
-```
-
-Open [http://localhost:9876](http://localhost:9876) in your browser.
-
----
-
-© 2025 [BindOffice](https://bindoffice.com). Made for Mac · Privacy first
+© 2026 [BindOffice](https://bindoffice.com). Made for Mac · Privacy first
