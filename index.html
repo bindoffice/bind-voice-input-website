@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bind Voice Input — macOS 本地离线语音输入，轻按快捷键开始说话，说完再按结束，文字自动写入任意应用。隐私优先，无需联网。">
+  <title>Bind Voice Input — 说话，不要打字</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <img src="assets/icon.png" alt="Bind Voice Input" width="28" height="28">
+        Bind Voice Input
+      </a>
+      <nav class="nav-links">
+        <a href="#features">功能</a>
+        <a href="#compare">对比</a>
+        <a href="#download">下载</a>
+        <a href="https://bindoffice.com" target="_blank" rel="noopener">BindOffice</a>
+      </nav>
+      <a class="btn btn-primary" href="#download">免费下载</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <span></span>
+          100% 本地离线 · macOS 原生
+        </div>
+        <h1>说话，不要打字</h1>
+        <p class="lead">
+          轻按全局快捷键开始说话，说完后再按一次结束。Bind Voice Input 在 Mac 本地完成语音识别，
+          文字即时写入光标位置——无需联网，语音数据永不上传。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="https://bindoffice.com" target="_blank" rel="noopener">
+            下载 for macOS
+          </a>
+          <a class="btn btn-secondary btn-large" href="#features">
+            了解更多
+          </a>
+        </div>
+        <p class="hero-note">macOS 14+ · 为 Apple Silicon 优化 · Intel 可用但可能较慢</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="mock-card small">
+          <div class="mock-label">菜单栏</div>
+          <div class="mock-text">🎙 正在聆听…<br>说完后再按快捷键结束</div>
+          <div class="mock-wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="mock-card large">
+          <div class="mock-titlebar">
+            <span class="mock-dot"></span>
+            <span class="mock-dot"></span>
+            <span class="mock-dot"></span>
+          </div>
+          <div class="mock-body">
+            <div class="mock-mic" aria-hidden="true">🎙</div>
+            <div class="mock-status">正在将语音转为文字…</div>
+            <div class="mock-text" style="margin-top: 20px; text-align: left;">
+              今天的产品评审会议改到下午三点，请把文档里的待办事项更新一下。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apps">
+      <div class="container">
+        <p>在任何应用中都能使用</p>
+        <div class="app-grid">
+          <div class="app-pill"><span class="app-icon" style="background:#0078d4">W</span> Word</div>
+          <div class="app-pill"><span class="app-icon" style="background:#000">N</span> Notion</div>
+          <div class="app-pill"><span class="app-icon" style="background:#4a154b">S</span> Slack</div>
+          <div class="app-pill"><span class="app-icon" style="background:#007acc">VS</span> VS Code</div>
+          <div class="app-pill"><span class="app-icon" style="background:#ff4500">R</span> Reddit</div>
+          <div class="app-pill"><span class="app-icon" style="background:#5865f2">D</span> Discord</div>
+          <div class="app-pill"><span class="app-icon" style="background:#34a853">G</span> Gmail</div>
+          <div class="app-pill"><span class="app-icon" style="background:#007aff">✉</span> 邮件</div>
+          <div class="app-pill"><span class="app-icon" style="background:#6366f1">T</span> Terminal</div>
+          <div class="app-pill"><span class="app-icon" style="background:#333">X</span> Xcode</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">核心能力</span>
+          <h2>为 Mac 用户打造的语音输入</h2>
+          <p>不是云端转写服务，而是驻留在菜单栏的本地助手——快、稳、私密。</p>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-copy">
+            <h3>完全离线，本地 ASR</h3>
+            <p>
+              内置 Qwen3-ASR 模型，在 Mac 上直接完成语音识别。没有 API 调用，
+              没有按量计费，断网也能用。
+            </p>
+            <ul class="feature-list">
+              <li>首次下载模型后永久本地运行</li>
+              <li>低延迟，说完即出字</li>
+              <li>支持中文、英文等多语种识别</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="visual-panel offline">
+              <div class="visual-icon">🔒</div>
+              <h4>数据不出设备</h4>
+              <p>语音在本地处理，不经过任何第三方服务器。适合处理敏感文档、代码与客户信息。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row reverse">
+          <div class="feature-copy">
+            <h3>全局快捷键，即说即写</h3>
+            <p>
+              轻按快捷键开始录音，说完后再按一次结束识别，结果自动注入当前光标位置。
+              无需切换窗口，写作、聊天、写代码都能无缝衔接。
+            </p>
+            <ul class="feature-list">
+              <li>自定义全局热键</li>
+              <li>轻按开始 / 再按结束</li>
+              <li>兼容绝大多数 macOS 应用</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="visual-panel privacy">
+              <div class="visual-icon">⌨️</div>
+              <h4>轻按开始，再按结束</h4>
+              <p>不用长按，两次轻按即可完成一次输入。光标在哪，文字就出现在哪——邮件、IDE、浏览器表单统统适用。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-copy">
+            <h3>屏幕 OCR 捕获</h3>
+            <p>
+              选中屏幕区域，一键提取文字。配合语音输入，把看到的和想说的都变成可编辑文本。
+            </p>
+            <ul class="feature-list">
+              <li>框选任意屏幕区域</li>
+              <li>多语言 OCR 识别</li>
+              <li>结果可直接复制或注入</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="visual-panel ocr">
+              <div class="visual-icon">📋</div>
+              <h4>看见即所得</h4>
+              <p>PDF、图片、网页上的文字，框一下就能拿来用。不用再手动敲一遍。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row reverse">
+          <div class="feature-copy">
+            <h3>对话翻译与润色</h3>
+            <p>
+              内置翻译对话窗口，支持多轮交流。可选 LLM 润色，让口述内容更通顺、更专业。
+            </p>
+            <ul class="feature-list">
+              <li>实时语音翻译对话</li>
+              <li>可选本地或云端 LLM 润色</li>
+              <li>界面支持 12 种语言</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="visual-panel translate">
+              <div class="visual-icon">🌐</div>
+              <h4>说中文，写英文</h4>
+              <p>跨国协作、写外文邮件、整理笔记——口述 + 翻译 + 润色，一条链路搞定。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">更多亮点</span>
+          <h2>细节决定体验</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="grid-card">
+            <div class="icon">🍎</div>
+            <h4>macOS 原生体验</h4>
+            <p>Swift 编写，菜单栏常驻，开机自启。遵循 macOS 设计规范，轻量不打扰。</p>
+          </div>
+          <div class="grid-card">
+            <div class="icon">🔒</div>
+            <h4>隐私优先</h4>
+            <p>语音在本地处理，不上传云端。权限申请清晰透明，你完全掌控自己的数据。</p>
+          </div>
+          <div class="grid-card">
+            <div class="icon">🌍</div>
+            <h4>12 语言界面</h4>
+            <p>英语、中文、日语、韩语、法语、德语等 12 种 UI 语言，全球用户都能上手。</p>
+          </div>
+          <div class="grid-card">
+            <div class="icon">⚡</div>
+            <h4>Apple Silicon 优化</h4>
+            <p>针对 M 系列芯片深度优化，本地推理更快更省电。Intel Mac 同样可用，但识别速度可能较慢。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare" class="compare">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">为什么选择我们</span>
+          <h2>Bind Voice Input vs 云端语音服务</h2>
+          <p>当你在意隐私、成本和稳定性时，本地方案是更理性的选择。</p>
+        </div>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Bind Voice Input</th>
+              <th>Typical Cloud ASR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>语音识别位置</td>
+              <td class="check-yes">100% 本地 Mac</td>
+              <td class="check-no">上传至云端</td>
+            </tr>
+            <tr>
+              <td>离线可用</td>
+              <td class="check-yes">✓ 完全离线</td>
+              <td class="check-no">需联网</td>
+            </tr>
+            <tr>
+              <td>按量/API 费用</td>
+              <td class="check-yes">无按量计费</td>
+              <td class="check-no">订阅或按分钟计费</td>
+            </tr>
+            <tr>
+              <td>数据隐私</td>
+              <td class="check-yes">语音不出设备</td>
+              <td class="check-no">经过第三方服务器</td>
+            </tr>
+            <tr>
+              <td>全局任意 App 输入</td>
+              <td class="check-yes">✓ 系统级注入</td>
+              <td class="check-no">通常限于自家客户端</td>
+            </tr>
+            <tr>
+              <td>屏幕 OCR</td>
+              <td class="check-yes">✓ 内置</td>
+              <td class="check-no">—</td>
+            </tr>
+            <tr>
+              <td>macOS 深度优化</td>
+              <td class="check-yes">✓ 原生菜单栏应用</td>
+              <td class="check-no">跨平台通用方案</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="principles">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">设计原则</span>
+          <h2>极简，不打扰</h2>
+          <p>好的工具应该隐形——需要时出现，用完即走。</p>
+        </div>
+        <div class="principle-grid">
+          <div class="principle-card">
+            <div class="num">01</div>
+            <h4>无侵扰</h4>
+            <p>菜单栏图标 + 轻量浮层，不抢占屏幕空间。</p>
+          </div>
+          <div class="principle-card">
+            <div class="num">02</div>
+            <h4>高效率</h4>
+            <p>口述比打字快 3 倍，思路不断流。</p>
+          </div>
+          <div class="principle-card">
+            <div class="num">03</div>
+            <h4>可信赖</h4>
+            <p>本地处理，权限清晰可控，数据始终留在你的 Mac 上。</p>
+          </div>
+          <div class="principle-card">
+            <div class="num">04</div>
+            <h4>够专注</h4>
+            <p>为 macOS 深度优化，不做泛平台妥协。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="cta">
+      <div class="container">
+        <h2>开启你的高效输入</h2>
+        <p>免费下载，本地运行。首次启动会引导你完成权限与模型下载。</p>
+        <a class="btn btn-primary btn-large" href="https://bindoffice.com" target="_blank" rel="noopener">
+          下载 Bind Voice Input
+        </a>
+        <p class="cta-meta">
+          需要 macOS 14 或更高版本 ·
+          <a href="https://bindoffice.com" target="_blank" rel="noopener">BindOffice</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#">
+            <img src="assets/icon.png" alt="" width="28" height="28">
+            Bind Voice Input
+          </a>
+          <p>macOS 本地离线语音输入工具。说话，不要打字。</p>
+        </div>
+        <div class="footer-col">
+          <h5>产品</h5>
+          <a href="#features">功能</a>
+          <a href="#compare">对比</a>
+          <a href="#download">下载</a>
+        </div>
+        <div class="footer-col">
+          <h5>支持</h5>
+          <a href="https://bindoffice.com" target="_blank" rel="noopener">下载</a>
+          <a href="mailto:support@bindoffice.com">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h5>BindOffice</h5>
+          <a href="https://bindoffice.com" target="_blank" rel="noopener">官网</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 BindOffice. 保留所有权利。</span>
+        <span>Made for Mac · 隐私优先</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
