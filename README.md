@@ -1,0 +1,109 @@
+# Bind Voice Input
+
+**说话，不要打字。**
+
+Bind Voice Input 是一款 macOS 本地离线语音输入工具。轻按全局快捷键开始说话，说完后再按一次结束，识别结果自动写入当前光标位置——无需联网，语音数据永不上传。
+
+[English](./README.en.md)
+
+---
+
+## 为什么选择 Bind Voice Input
+
+| | Bind Voice Input | 典型云端语音服务 |
+|---|---|---|
+| 语音识别位置 | 100% 本地 Mac | 上传至云端 |
+| 离线可用 | ✓ 完全离线 | 需联网 |
+| 按量 / API 费用 | 无按量计费 | 订阅或按分钟计费 |
+| 数据隐私 | 语音不出设备 | 经过第三方服务器 |
+| 全局任意 App 输入 | ✓ 系统级注入 | 通常限于自家客户端 |
+| 屏幕 OCR | ✓ 内置 | — |
+| macOS 深度优化 | ✓ 原生菜单栏应用 | 跨平台通用方案 |
+
+---
+
+## 核心功能
+
+### 完全离线，本地 ASR
+
+内置 [Qwen3-ASR](https://github.com/bindoffice/bind-voice-input/tree/main/qwen-asr) 模型，在 Mac 上直接完成语音识别。没有 API 调用，没有按量计费，断网也能用。
+
+- 首次下载模型后永久本地运行
+- 低延迟，说完即出字
+- 支持中文、英文等多语种识别
+
+### 全局快捷键，即说即写
+
+轻按快捷键开始录音，说完后再按一次结束识别，结果自动注入当前光标位置。无需切换窗口，写作、聊天、写代码都能无缝衔接。
+
+- 自定义全局热键
+- 轻按开始 / 再按结束
+- 兼容绝大多数 macOS 应用（Word、Notion、Slack、VS Code、Gmail、Terminal 等）
+
+### 屏幕 OCR 捕获
+
+选中屏幕区域，一键提取文字。配合语音输入，把看到的和想说的都变成可编辑文本。
+
+- 框选任意屏幕区域
+- 多语言 OCR 识别
+- 结果可直接复制或注入
+
+### 对话翻译与润色
+
+内置翻译对话窗口，支持多轮交流。可选 LLM 润色，让口述内容更通顺、更专业。
+
+- 实时语音翻译对话
+- 可选本地或云端 LLM 润色
+- 界面支持 12 种语言
+
+---
+
+## 系统要求
+
+- **macOS 14**（Sonoma）或更高版本
+- 为 **Apple Silicon**（M 系列）深度优化；Intel Mac 可用，但识别速度可能较慢
+- 首次启动需下载 Qwen3-ASR 模型（约数百 MB，仅需一次）
+
+---
+
+## 下载
+
+[下载 Bind Voice Input for macOS](https://github.com/bindoffice/bind-voice-input-website/raw/refs/heads/main/assets/Bind-Voice-Input-2.0.1.dmg)
+
+免费下载，本地运行。首次启动会引导你完成麦克风、辅助功能等权限授权与模型下载。
+
+---
+
+## 设计原则
+
+1. **无侵扰** — 菜单栏图标 + 轻量浮层，不抢占屏幕空间
+2. **高效率** — 口述比打字更快，思路不断流
+3. **可信赖** — 本地处理，权限清晰可控，数据始终留在你的 Mac 上
+4. **够专注** — 为 macOS 深度优化，不做泛平台妥协
+
+---
+
+## 相关链接
+
+| | |
+|---|---|
+| 产品落地页 | 本目录 `index.html`（静态站点） |
+| BindOffice 官网 | [bindoffice.com](https://bindoffice.com) |
+| 应用源码 | [bindoffice/bind-voice-input](https://github.com/bindoffice/bind-voice-input) |
+| 官网仓库 | [bindoffice/bind-voice-input-website](https://github.com/bindoffice/bind-voice-input-website) |
+| 技术支持 | [support@bindoffice.com](mailto:support@bindoffice.com) |
+
+---
+
+## 本地预览落地页
+
+```bash
+cd website
+python3 -m http.server 9876
+```
+
+浏览器访问 [http://localhost:9876](http://localhost:9876)。
+
+---
+
+© 2025 [BindOffice](https://bindoffice.com). Made for Mac · 隐私优先
