@@ -89,7 +89,6 @@ Free to download, runs locally. First launch walks you through permissions (micr
 |---|---|
 | Product landing page | `index.html` in this directory (static site) |
 | BindOffice | [bindoffice.com](https://bindoffice.com) |
-| App source code | [bindoffice/bind-voice-input](https://github.com/bindoffice/bind-voice-input) |
 | Website repo | [bindoffice/bind-voice-input-website](https://github.com/bindoffice/bind-voice-input-website) |
 | Support | [support@bindoffice.com](mailto:support@bindoffice.com) |
 
