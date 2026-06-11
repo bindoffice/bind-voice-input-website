@@ -60,7 +60,7 @@ Built-in translation dialog with multi-turn support. Optional LLM refinement mak
 
 ## System Requirements
 
-- **macOS 14** (Sonoma) or later
+- **macOS 15** (Sequoia) or later
 - Optimized for **Apple Silicon** (M-series); Intel Macs are supported but may be slower
 - Initial launch downloads the Qwen3-ASR model (hundreds of MB, one-time)
 
