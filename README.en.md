@@ -68,8 +68,6 @@ Built-in translation dialog with multi-turn support. Optional LLM refinement mak
 
 ## Download
 
-[Download Bind Voice Input for macOS](https://github.com/bindoffice/bind-voice-input-website/raw/refs/heads/main/assets/Bind-Voice-Input-2.2.0.dmg)
-
 Free to download, runs locally. First launch walks you through permissions (microphone, accessibility) and model download.
 
 ---
